@@ -1,0 +1,21 @@
+fieldset {
+  margin-bottom: 20px;
+}
+
+.ul_form {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ul_form > li:nth-child(n+2) {
+  margin: 10px 0;
+}
+
+.ul_form > li:last-child {
+  margin: 10px 0 0;
+}
+
+.name_wrapp {
+  margin: 0;
+}
