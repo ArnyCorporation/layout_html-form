@@ -15,109 +15,101 @@
 
   <body>
 
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" onsubmit="onSubmit(event)">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-appdivcation" onsubmit="onSubmit(event)">
 
       <fieldset>
         <legend>
           <p class="name_wrapp">Personal information</p>
         </legend>
-        <ul class="ul_form">
-          <li>
+          <div>
             <label for="surname">Surname:</label>
-            <input type="text" required="required" autocomplete="off" id="surname" name="Surname">
-          </li>
+            <input type="text" required="required" autocomplete="off" id="surname" name="surname">
+          </div>
 
-          <li>
+          <div>
             <label for="name">Name:</label>
             <input type="text" required="required" autocomplete="off" id="name" name="name">
-          </li>
+          </div>
 
-          <li>
+          <div>
             <label for="old">How old are You?</label>
             <input type="number" id="old" name="old" min="18" max="110" value="12" data-qa="field-value">
-          </li>
+          </div>
 
-          <li>
+          <div>
             <label for="birth">Full date of birth:</label>
             <input type="date" id="birth" name="birth">
-          </li>
+          </div>
 
-          <li>
+          <div>
             <label for="accept">I accept the term of the agreement</label>
             <input type="checkbox" id="accept" name="accept">
-          </li>
-        </ul>
+          </div>
       </fieldset>
 
       <fieldset>
         <legend>
           <p class="name_wrapp">Registration</p>
         </legend>
-        <ul class="ul_form">
-          <li>
+          <div>
             <label for="e-mail">E-mail:</label>
             <input type="email" id="e-mail" name="e-mail" placeholder="email@example.com" data-qa="field-placeholder">
-          </li>
-          <li>
+          </div>
+          <div>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" minlength="8"
        maxlength="16">
-          </li>
-        </ul>
+          </div>
       </fieldset>
 
       <fieldset>
         <legend>
           <p class="name_wrapp">An interesting fact about you!</p>
         </legend>
-        <ul class="ul_form">
-          <li>
+          <div>
             <label for="contactChoice1">Do you love cats?</label>
             <input type="radio" id="contactChoice1" name="contact" value="email" checked="checked">
             <label for="contactChoice1">Yes</label>
             <input type="radio" id="contactChoice2" name="contact" value="phone">
             <label for="contactChoice2">No</label>
-          </li>
-          <li>
+          </div>
+          <div>
             <label for="color">What is your favorite color?</label>
             <input type="color" id="color" name="color">
-          </li>
-          <li>
+          </div>
+          <div>
             <label for="bed">What time do you go to bed?</label>
             <input type="time" id="bed" name="bed">
-          </li>
-          <li>
+          </div>
+          <div>
             <label for="cars">What are your favorite brand of cars?</label>
             <select name="cars" size="4" id="cars">
               <option value="BMW">BMW</option>
               <option value="Audi">Audi</option>
               <option value="Lada">Lada</option>
             </select>
-          </li>
-          <li>
+          </div>
+          <div>
             <label for="rate">How do you rate our work?</label>
             <input type="range" id="rate" name="rate">
-          </li>
-        </ul>
+          </div>
       </fieldset>
 
       <fieldset>
         <legend>
           <p class="name_wrapp">Additional info:</p>
         </legend>
-        <ul class="ul_form">
-          <li>
+          <div>
             <label for="comments">Comments:</label>
             <textarea name="comments" autocomplete="off" id="comments" cols="20" rows="2" minlength="10" maxlength="40git status"></textarea>
-          </li>
-          <li>
+          </div>
+          <div>
             <label for="recommend_us">Would you recommend us?:</label>
             <select name="recommend_us" id="recommend_us">
               <option value="y">yes</option>
               <option value="n">no</option>
             </select>
-          </li>
-        </ul>
+          </div>
       </fieldset>
       <button type="submit">Submit</button>
     </form>
